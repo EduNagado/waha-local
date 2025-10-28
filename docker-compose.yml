@@ -26,6 +26,11 @@ services:
     image: devlikeapro/waha:latest
     platform: linux/amd64
     environment:
+      WAHA_API_KEY: 80406719c11b4073b6b1345662c19284
+      WAHA_DASHBOARD_USERNAME: admin
+      WAHA_DASHBOARD_PASSWORD: 72b7a4240bfa44ba9235419d5e3a1cbe
+      WHATSAPP_SWAGGER_USERNAME: admin
+      WHATSAPP_SWAGGER_PASSWORD: 72b7a4240bfa44ba9235419d5e3a1cbe
       WHATSAPP_HOOK_URL: http://host.docker.internal:5678/webhook/webhook
       WHATSAPP_DEFAULT_ENGINE: WEBJS
       WHATSAPP_HOOK_EVENTS: message.any
@@ -34,6 +39,7 @@ services:
       - waha_media:/app/.media
     ports:
       - "3000:3000"
+
 
   n8n:
     image: n8nio/n8n:latest

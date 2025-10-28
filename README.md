@@ -1,7 +1,6 @@
-#Login
-WAHA_DASHBOARD_USERNAME=admin
-WAHA_DASHBOARD_PASSWORD=72b7a4240bfa44ba9235419d5e3a1cbe
-
+#Login no Waha 
+Login: admin
+Senha: 72b7a4240bfa44ba9235419d5e3a1cbe
 
 ##Credencial 
 URL: http://localhost:3000
